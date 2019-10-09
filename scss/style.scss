@@ -1,0 +1,418 @@
+// Imports
+@import "_reset.scss";
+@import "_vars.scss";
+@import "_strap.scss";
+
+// Font
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.4;
+  color: $myWhite
+}
+
+// Global Section Styles
+
+section {
+  padding: 2.5% 10%;
+}
+
+section:nth-child(even) {
+  background-color: $myWhite;
+}
+
+// NavBar
+
+.nav-container {
+  margin-bottom: 2%;
+}
+
+.navbar-brand {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.brand-thick {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding-left: 1rem;
+}
+
+// Intro Section
+
+.intro-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // margin: 10px 10px 10px 0;
+  text-align: left;
+  padding: 10px 0;
+}
+
+
+.intro-div-buttons button {
+  margin: 10px 10px 10px 0;
+
+}
+
+.btn-apple {
+  background-color: $secondary-dark;
+  color: $myWhite;
+}
+
+.btn-apple:hover {
+  background-color: $secondary-light;
+
+}
+
+.intro-right {
+  flex: 1;
+  margin: 10px;
+}
+
+.round-img {
+  height: 550px;
+  transform: rotate(15deg);
+  padding-left: 30px;
+}
+
+
+// Feature Section
+
+#features {
+  // width: 100%;
+  display: flex;
+  // padding: 7.5% 10%;
+  text-align: center;
+  color: $secondary-dark;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: -5%;
+}
+
+.feature-icons {
+  font-size: 5rem;
+  color: $secondary-light;
+}
+
+.feature-icons:hover {
+  color: $primary-color;
+}
+
+.feature-item {
+  flex: 1 1 250px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $secondary-dark;
+}
+
+.feature-item > * {
+  padding: 10px;
+}
+
+.feature-item > p {
+  color: $mid-Grayish-Blue;
+}
+
+// Testimonial Section
+
+#carousel-outer {
+  display: flex;
+}
+
+.carousel-inner {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: $myWhite;
+  padding-bottom: 3%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testimonial-attrib {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.testimonial-attrib > div {
+  margin: 1% 2%;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  max-width: 100px;
+  margin: 0 5%;
+}
+
+.testimonial-author {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  color: $myWhite;
+}
+
+// Press Section
+
+#press > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: $secondary-dark;
+}
+
+.press-box {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box, .right-box {
+  flex: 1 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5%;
+}
+
+.press-item > img {
+  max-width: 75%;
+}
+
+.press-item {
+  flex: 1 0 200px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+// Pricing Section
+
+#pricing {
+  margin: 3% 10%;
+  padding: 0;
+}
+
+#pricing header {
+  text-align: center;
+  color: $myWhite
+}
+
+#pricing header h2 {
+  margin-bottom: .5%;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+
+.card-deck {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  flex: none !important;
+  width: 275px !important;
+  margin: 3%
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card-subtitle {
+  font-weight: 600;
+}
+
+.card-footer button.btn-main {
+  background-color: $secondary-dark;
+  color: $myWhite;
+}
+
+.card-footer button:hover {
+  background-color: $secondary-light;
+}
+
+// Download Section
+
+#download {
+  text-align: center;
+
+}
+
+#download h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: $secondary-dark;
+}
+
+#download > button {
+  margin: 2.5% 2.5% 0;
+}
+
+#contact {
+  padding: 2.5% 10% 1%;
+  text-align: center;
+  color: $myWhite;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.social i {
+  font-size: 3rem;
+  margin: .5% 1.5%;
+}
+
+.social {
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 897px) {
+  
+ .intro-div {
+   flex-direction: column;
+ } 
+
+ .intro-left * {
+    text-align: center;
+  }
+
+  .round-img {
+    transform: rotate(0);
+    // padding: 10px 30px;
+    padding: 0;
+  }
+
+} 
+
+@media screen and (max-width: 586px) {
+  .intro-div-title h1 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-deck {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .intro-img {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .round-img {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  
+  .testimonial-text {
+    font-size: 1.5rem;
+  }
+
+  #press h2 {
+    margin-top: 5%;
+    font-size: 1.75rem;
+  }
+
+  .press-item {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    padding: 2.5% 5%;
+  }
+ 
+}
+
+@media screen and (max-width: 350px) {
+      .intro-div-title h1 {
+    font-size: 1.75rem;
+  }
+
+  .round-img {
+    height: 525px;
+  }
+
+  .intro-right {
+    margin: 0;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  #pricing header h2, #download h3, .social i {
+    font-size: 1.75rem;
+  }
+
+}

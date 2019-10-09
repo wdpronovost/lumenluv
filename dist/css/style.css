@@ -1,0 +1,541 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,900&display=swap");
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+    End of _reset
+*/
+/*
+
+    Stuff I like from BootStrap...
+
+ * Bootstrap v4.2.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #6c22b3;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 1.4;
+  color: ghostwhite;
+}
+
+section {
+  padding: 2.5% 10%;
+}
+
+section:nth-child(even) {
+  background-color: ghostwhite;
+}
+
+.nav-container {
+  margin-bottom: 2%;
+}
+
+.navbar-brand {
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.brand-thick {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  padding-left: 1rem;
+}
+
+.intro-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.intro-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.intro-div-buttons button {
+  margin: 10px 10px 10px 0;
+}
+
+.btn-apple {
+  background-color: #390A66;
+  color: ghostwhite;
+}
+
+.btn-apple:hover {
+  background-color: #A74AFF;
+}
+
+.intro-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px;
+}
+
+.round-img {
+  height: 550px;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  padding-left: 30px;
+}
+
+#features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #390A66;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: -5%;
+}
+
+.feature-icons {
+  font-size: 5rem;
+  color: #A74AFF;
+}
+
+.feature-icons:hover {
+  color: #6c22b3;
+}
+
+.feature-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #390A66;
+}
+
+.feature-item > * {
+  padding: 10px;
+}
+
+.feature-item > p {
+  color: #808d99;
+}
+
+#carousel-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-inner {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: ghostwhite;
+  padding-bottom: 3%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.testimonial-attrib {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonial-attrib > div {
+  margin: 1% 2%;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  max-width: 100px;
+  margin: 0 5%;
+}
+
+.testimonial-author {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  color: ghostwhite;
+}
+
+#press > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #390A66;
+}
+
+.press-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-box, .right-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1.5%;
+}
+
+.press-item > img {
+  max-width: 75%;
+}
+
+.press-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pricing {
+  margin: 3% 10%;
+  padding: 0;
+}
+
+#pricing header {
+  text-align: center;
+  color: ghostwhite;
+}
+
+#pricing header h2 {
+  margin-bottom: .5%;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: none !important;
+          flex: none !important;
+  width: 275px !important;
+  margin: 3%;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card-subtitle {
+  font-weight: 600;
+}
+
+.card-footer button.btn-main {
+  background-color: #390A66;
+  color: ghostwhite;
+}
+
+.card-footer button:hover {
+  background-color: #A74AFF;
+}
+
+#download {
+  text-align: center;
+}
+
+#download h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #390A66;
+}
+
+#download > button {
+  margin: 2.5% 2.5% 0;
+}
+
+#contact {
+  padding: 2.5% 10% 1%;
+  text-align: center;
+  color: ghostwhite;
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.social i {
+  font-size: 3rem;
+  margin: .5% 1.5%;
+}
+
+.social {
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 897px) {
+  .intro-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .intro-left * {
+    text-align: center;
+  }
+  .round-img {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .intro-div-title h1 {
+    font-size: 2.75rem;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card-deck {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .intro-img {
+    margin: 0;
+    padding: 0;
+  }
+  .round-img {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .testimonial-text {
+    font-size: 1.5rem;
+  }
+  #press h2 {
+    margin-top: 5%;
+    font-size: 1.75rem;
+  }
+  .press-item {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section {
+    padding: 2.5% 5%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .intro-div-title h1 {
+    font-size: 1.75rem;
+  }
+  .round-img {
+    height: 525px;
+  }
+  .intro-right {
+    margin: 0;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  #pricing header h2, #download h3, .social i {
+    font-size: 1.75rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
